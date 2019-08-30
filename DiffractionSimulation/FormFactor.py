@@ -1,7 +1,7 @@
 import numpy as np
 import os
 
-aff_dict = np.load(os.path.join('Atomic_Form_Factors','Atomic_Form_Factor_Dictionary.npy')).item()
+aff_dict = np.load(os.path.join('Atomic_Form_Factors','Atomic_Form_Factor_Dictionary.npy'),allow_pickle=True).item()
     
 def FormFactor(q,elem): 
     ''' 
